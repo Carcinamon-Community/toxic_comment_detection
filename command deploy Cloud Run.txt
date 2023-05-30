@@ -1,0 +1,5 @@
+gcloud builds submit --tag gcr.io/deploy-carcinamon/index
+
+gcloud run deploy --image gcr.io/deploy-carcinamon/index --platform managed 
+
+gcloud run deploy --image gcr.io/deploy-carcinamon/index --platform managed --allow-unauthenticated --region asia-southeast2
